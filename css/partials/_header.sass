@@ -1,0 +1,52 @@
+.header
+  display: flex
+  justify-content: center
+
+  padding: 5px
+  max-width: $container-width
+
+  width: 80%
+  margin: 0 auto
+
+  &__logotype
+    font-size: 1.3rem
+    color: darken($light-grey, 35%)
+
+    i.fab
+      color: rgb(255, 217, 0)
+
+  &__title
+    flex-grow: 1
+    text-align: center
+    align-items: center
+
+    line-height: $header-height
+    font-size: 1.4rem
+    letter-spacing: 4px
+    font-weight: 500
+    color: $mid-bg
+    text-transform: uppercase
+
+    @include mobile
+      font-size: 1rem
+      line-height: 1.4rem
+
+      span
+        display: block
+        margin: 0
+
+  &__btn-wrapper
+    justify-content: center
+    align-items: center
+    height: 100%
+
+  &__lang-btn
+    height: 45px
+    width: 45px
+    font-weight: 500
+    font-size: 1.1rem
+
+    @include mobile
+      position: absolute
+      top: 13px
+      right: 13px

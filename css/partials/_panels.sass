@@ -1,0 +1,118 @@
+
+.panel
+  width: 200px
+  height: 200px
+  border-radius: 10px
+  border: 1px solid $light-grey
+  background-color: #fff
+
+  padding: 30px 20px 20px
+
+  position: absolute
+  top: 65vh
+
+  @include desktop-big
+    width: 300px
+    height: 300px
+
+    padding: 50px
+
+    &__icon
+      width: 75px
+      height: 75px
+      left: 125px
+
+  &--left
+    left: 21%
+
+  &--right
+    right: 21%
+
+  @include portrait
+    top: auto
+    bottom: 5vh
+
+    &--left
+      left: 10%
+
+    &--right
+      right: 10%
+
+  @include mobile
+    height: 80vw
+    width: 80vw
+    top: auto
+
+    padding: 50px 70px
+
+    &--left
+      left: 5vw
+      bottom: 45vh
+
+    &--right
+      right: 5vw
+      bottom: 10vh
+
+  @include mobile-small
+    &--right
+      bottom: 5vh
+
+  &__icon
+    position: absolute
+    left: 75px
+    top: -25px
+
+    width: 50px
+    height: 50px
+    border-radius: 50%
+
+    border: 1px solid $light-grey
+    color: darken($light-grey, 20%)
+    background-color: #fff
+
+    display: grid
+    place-items: center
+
+    font-size: 1.5rem
+
+    @include desktop
+      width: 65px
+      height: 65px
+      left: 115px
+      top: -33px
+
+  &__drag-info
+    position: absolute
+    top: 5px
+    left: 5px
+
+    color: $light-grey
+    font-size: .6rem
+    text-transform: uppercase
+    opacity: 0
+    transition: 1s linear all
+
+  @include desktop
+
+    &:hover .panel__drag-info
+      opacity: 1
+
+  &__choice
+    margin: 10px 0
+
+  &__result
+    font-size: 1.2rem
+    margin-top: 10px
+
+    @include desktop
+      margin-top: 30px
+
+    span + span
+      display: block
+      margin-top: 10px
+      padding-left: 10px
+
+.stats
+
+  &__info
+    margin: 10px 0

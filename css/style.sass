@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap')
+
+$dark-bg: #020024
+$mid-bg: #090979
+$light-bg: #00d4ff
+$light-grey: #aaa
+
+$bg-gradient: linear-gradient(90deg, $dark-bg 0%, $mid-bg 35%, $light-bg 100%)
+
+$header-height: 50px
+$container-width: 800px
+
+@mixin desktop-big
+  @media (min-width: 1200px)
+    @content
+
+@mixin desktop
+  @media (min-width: 976px)
+    @content
+
+@mixin portrait
+  @media (orientation: portrait) and (min-width: 500px)
+    @content
+
+@mixin mobile
+  @media (max-width: 500px)
+    @content
+
+@mixin mobile-small
+  @media (max-width: 380px)
+    @content
+
+@keyframes flash
+  0%  opacity 0
+
+  30% opacity 1
+
+  70% opacity 1
+
+  100% opacity 0
+
+@import './partials/general'
+@import './partials/logo'
+@import './partials/header'
+@import './partials/select'
+@import './partials/panels'

@@ -1,0 +1,54 @@
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: roboto, sans-serif
+
+html
+  font-size: 15px
+  scroll-behavior: smooth
+
+  @include desktop-big
+    font-size: 20px
+
+body
+  height: 100vh
+
+.container
+  overflow: hidden
+  position: relative // for absolute panels
+  height: 100vh
+
+  @include mobile
+    height: 200vh
+
+// universal components
+h1
+  font-size: 2rem
+
+.btn-round
+  background-color: transparent
+  border: 2px solid $mid-bg
+  border-radius: 50%
+
+  color: $mid-bg
+
+  outline: none
+  cursor: pointer
+
+  &:hover
+    background-image: $bg-gradient
+    border-color: #fff
+    color: #fff
+
+// color element at the background
+
+.color,
+  position: absolute
+  height: 50vh
+  width: 100%
+  background-image: $bg-gradient
+  z-index: -1
+
+  @include mobile
+    height: calc(200vh - 50px)
