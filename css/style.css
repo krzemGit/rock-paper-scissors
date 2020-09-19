@@ -113,21 +113,23 @@ h1 {
     top: 10px;
     left: 10px;
   }
-  .js-logo span:first-child {
-    position: absolute;
-    top: -10px;
-    left: -12px;
-    opacity: .1;
-    font-size: 1.2em;
-  }
-  .js-logo span:last-child {
-    display: block;
-    position: absolute;
-    font-size: .4em;
-    color: #515151;
-    bottom: 1px;
-    right: 2px;
-  }
+}
+
+.js-logo span:first-child {
+  position: absolute;
+  top: -10px;
+  left: -12px;
+  opacity: .1;
+  font-size: 1.2em;
+}
+
+.js-logo span:last-child {
+  display: block;
+  position: absolute;
+  font-size: .4em;
+  color: #515151;
+  bottom: 1px;
+  right: 2px;
 }
 
 .header {
